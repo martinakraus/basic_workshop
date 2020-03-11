@@ -237,3 +237,36 @@ We need to insert this `images`-Tag inside our new Section:
 If we put the correct url or path to our image it should be displayed in our webpage.
 
 ### Hyperlinks
+
+In the Beginning we added a `nav`-Tag for having Navigation on our website.
+Till now we just have one item inside of it, so let's add another one and by clicking on it 
+it should actually navigates to another website.
+
+This functionality can be implemented with the help of Hyperlinks and its relating 
+`a`-Tag.
+The `<a>` tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the `a`-Tag is the `href` attribute, which indicates the link's destination.
+
+Example:
+```html
+<a href="https://angular-austria.at/">Go to Angular Austria!</a>
+```
+
+All we have to do is to add this line inside another `list-item`-Tag we need to add inside our unordered List:
+
+```html
+<header> ... </header>
+<nav>
+    <ul>
+        <li>Calculator</li>
+        <li><a href="https://angular-austria.at/">Go to Angular Austria!</a></li>
+    </ul>
+</nav>
+```
+
+Let's take a look in our Web Browser:
+
+![hyperlink](./img/hyperlink.png)
+
+The Browser renders this `a`-Tag automatically with a purple color and underlined. And even more we can actually click on it and our Web Browser will forward us to our official Angular Austria Homepage.
